@@ -8,7 +8,7 @@ def my_select(collection)
     #   end
     # end
     while i < collection.length
-      if collection[i] == true
+      if block.call(collection[i]) == true
         new_collection << yield(collection[i])
       end
       i += 1
