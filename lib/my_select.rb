@@ -1,6 +1,6 @@
 def my_select(collection)
   new_collection = []
-  # i = 0
+  i = 0
   if block_given?
     # for e in collection
     #   if e == true
