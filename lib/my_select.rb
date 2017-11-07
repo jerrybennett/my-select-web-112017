@@ -2,11 +2,6 @@ def my_select(collection)
   new_collection = []
   i = 0
   if block_given?
-    # for e in collection
-    #   if e == true
-    #     new_collection.push yield e
-    #   end
-    # end
     while i < collection.length
       if yield(collection[i]) == true
         new_collection << collection[i]
